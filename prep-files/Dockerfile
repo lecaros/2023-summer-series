@@ -24,7 +24,7 @@ RUN apt-get install -y docker-ce
 RUN apt-get clean
 
 # Clone the repo
-RUN git clone https://github.com/lecaros/2023-summer-series.git
+CMD ["git", "clone", "https://github.com/lecaros/2023-summer-series.git"]
 
 # Set the Docker image entry point, this will run Docker when you start a container
 CMD ["docker", "--version"]
