@@ -4,4 +4,4 @@ scrape_configs:
   - job_name: 'fluent-bit-local'
     static_configs:
       - targets: ['fluent-bit-sandbox:2020']
-    metrics_path: /api/v1/metrics/prometheus
+    metrics_path: /api/v2/metrics/prometheus
